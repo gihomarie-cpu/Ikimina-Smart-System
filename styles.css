@@ -37,31 +37,184 @@ nav ul a:hover{
 
 
 
+.logo span {
+    color: #d7e9b9;
+}
 
 
 
+/* SERVICES SECTION */
+.services {
+    padding: 70px 8%;
+}
+
+.heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.subtitle {
+    color: rgb(66, 94, 66);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.heading h1 {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.heading h1 span {
+    color: rgb(66, 94, 66);
+    color: white;
+}
+
+.description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* SERVICE GRID */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* SERVICE CARDS */
+.service-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border-bottom: 4px solid transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-bottom-color: rgb(66, 94, 66);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* SERVICE ICONS */
+.icon {
+    width: 65px;
+    height: 65px;
+    background-color: #e7efe5;
+    color: rgb(66, 94, 66);
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 29px;
+    margin-bottom: 22px;
+    flex-shrink: 0;
+
+    transition: 0.3s;
+}
+
+.service-card:hover .icon {
+    background-color: rgb(66, 94, 66);
+    color: white;
+}
+
+/* SERVICE TITLES */
+.service-card h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+/* SERVICE DESCRIPTIONS */
+.service-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    flex-grow: 1;
+}
+
+/* LEARN MORE LINKS */
+.service-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(66, 94, 66);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.service-card a:hover {
+    color: rgb(163, 131, 131);
+}
+
+.service-card a i {
+    margin-left: 6px;
+    transition: margin-left 0.3s;
+}
+
+.service-card a:hover i {
+    margin-left: 12px;
+}
 
 
+/* TABLETS */
+@media (max-width: 1000px) {
+    .service-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
+    .header {
+        padding: 20px 5%;
+    }
 
+    .services {
+        padding: 55px 5%;
+    }
+}
 
+/* MOBILE PHONES */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
 
+    nav a {
+        font-size: 14px;
+    }
 
+    .heading h1 {
+        font-size: 32px;
+    }
 
+    .service-container {
+        grid-template-columns: 1fr;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .service-card {
+        padding: 25px 22px;
+    }
+}
 
 
 #contact{
